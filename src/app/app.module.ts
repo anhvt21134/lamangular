@@ -20,6 +20,7 @@ import { FooterAdminComponent } from './components/footer-admin/footer-admin.com
 import { LayoutAdminComponent } from './components/layouts/layout-admin/layout-admin.component';
 import { LayoutComponent } from './components/layouts/layout/layout.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TestComponent } from './pages/test/test.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     LayoutAdminComponent,
     LayoutComponent,
     SidebarComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
