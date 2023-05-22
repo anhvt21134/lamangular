@@ -1,24 +1,19 @@
-<form action="action_page.php" method="post">
+<form class="form form-login" (ngSubmit)="onSubmit()">
     <div class="imgcontainer">
         <img src="https://tse1.mm.bing.net/th?id=OIP.SoOuxtPK4yNwRsScmAYGWgHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
             alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="username" class="form-label">Email address</label>
+        <input type="email" class="form-control" aria-describedby="emailHelp" id="username" name="username"
+            [(ngModel)]="credentials.username" required />
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit">Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="credentials.password"
+            required />
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </form>
