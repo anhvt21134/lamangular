@@ -1,8 +1,8 @@
-import { Product } from '../common/product';
+import { IProduct } from '../common/product';
 
-export const product: Product[] = [
+export const products: IProduct[] = [
   {
-    id: '1',
+    id: 1,
     name: 'Iphone 13 VNA',
     price: 162900000,
     image:
@@ -13,7 +13,7 @@ export const product: Product[] = [
   },
 
   {
-    id: '2',
+    id: 2,
     name: 'Điện thoại di động iPhone 14 Pro',
     price: 24900000,
     image:
@@ -24,7 +24,7 @@ export const product: Product[] = [
   },
 
   {
-    id: '3',
+    id: 3,
     name: 'Realme C55 - 6GB/128GB',
     price: 3990000,
     image:
@@ -34,7 +34,7 @@ export const product: Product[] = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fug',
   },
   {
-    id: '4',
+    id: 4,
     name: 'Iphone 13 VNA',
     price: 162900000,
     image:
@@ -45,7 +45,7 @@ export const product: Product[] = [
   },
 
   {
-    id: '5',
+    id: 5,
     name: 'Điện thoại di động iPhone 14 Pro',
     price: 24900000,
     image:
@@ -56,7 +56,7 @@ export const product: Product[] = [
   },
 
   {
-    id: '6',
+    id: 6,
     name: 'Realme C55 - 6GB/128GB',
     price: 3990000,
     image:

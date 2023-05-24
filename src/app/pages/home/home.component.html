@@ -1,6 +1,4 @@
 <div>
-
-
   <img src="https://cdn.hoanghamobile.com/i/home/Uploads/2023/04/26/thu-cu-doi-moi-iphone-14-web-01.jpg" alt=""
     class="banner1">
   <div class="row">
@@ -70,15 +68,16 @@
                 {{ product.name }}
               </div>
               <p class="card-text">Price: {{ product.price }}</p>
-              <button class="btn btn-primary">Xem chi tiết</button>
+              <button class="btn btn-primary" (click)="viewDetail(product.id)">Xem chi
+                tiết</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <img src="https://cdn.hoanghamobile.com/i/home/Uploads/2023/05/15/1200x200_638197677632794495.png" alt=""
-    class="banner2">
+  <img src="https://cdn.hoanghamobile.com/i/home/Uploads/2023/05/15/1200x200_638197677632794495.png"
+    alt="" class="banner2">
   <div class="box1">
     <h5>Smart tv</h5>
   </div>
@@ -94,7 +93,8 @@
                 {{ product.name }}
               </div>
               <p class="card-text">Price: {{ product.price }}</p>
-              <button class="btn btn-primary">Xem chi tiết</button>
+              <button class="btn btn-primary" (click)="viewDetail(product.id)">Xem chi
+                tiết</button>
             </div>
           </div>
         </div>
@@ -107,14 +107,16 @@
   <div class="row">
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.XGX7yWDMggxcFhlZ9iqmbwHaHa&pid=Api&rs=1&c=1&qlt=95&w=112&h=112"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.XGX7yWDMggxcFhlZ9iqmbwHaHa&pid=Api&rs=1&c=1&qlt=95&w=112&h=112"
           alt="">
         <h2>Loa</h2>
       </div>
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.HhZLMIFQHaybcXmTFyUR5wHaHa&pid=Api&rs=1&c=1&qlt=95&w=114&h=114"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.HhZLMIFQHaybcXmTFyUR5wHaHa&pid=Api&rs=1&c=1&qlt=95&w=114&h=114"
           alt="">
         <h2>Máy Ảnh</h2>
 
@@ -122,7 +124,8 @@
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.jFjaQFIsh1LRxaDLqjJ-XgHaHa&pid=Api&rs=1&c=1&qlt=95&w=123&h=123"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.jFjaQFIsh1LRxaDLqjJ-XgHaHa&pid=Api&rs=1&c=1&qlt=95&w=123&h=123"
           alt="">
         <h2>Sạc dự phòng</h2>
 
@@ -130,63 +133,72 @@
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.xbGjANQQsqRp_J7czdLObAHaHa&pid=Api&rs=1&c=1&qlt=95&w=105&h=105"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.xbGjANQQsqRp_J7czdLObAHaHa&pid=Api&rs=1&c=1&qlt=95&w=105&h=105"
           alt="">
         <h2>Quạt</h2>
       </div>
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.dejFFCqaOEQfGXLIhpxB7wAAAA&pid=Api&rs=1&c=1&qlt=95&w=117&h=117"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.dejFFCqaOEQfGXLIhpxB7wAAAA&pid=Api&rs=1&c=1&qlt=95&w=117&h=117"
           alt="">
         <h2>Camera an ninh</h2>
       </div>
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.NqdMbekBk4KS9D7UzLizLAHaHa&pid=Api&rs=1&c=1&qlt=95&w=122&h=122"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.NqdMbekBk4KS9D7UzLizLAHaHa&pid=Api&rs=1&c=1&qlt=95&w=122&h=122"
           alt="">
         <h2>Thiết bị mạng</h2>
       </div>
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.e6exRZbM-cJ9sn3aD3b8xQHaHa&pid=Api&rs=1&c=1&qlt=95&w=120&h=120"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.e6exRZbM-cJ9sn3aD3b8xQHaHa&pid=Api&rs=1&c=1&qlt=95&w=120&h=120"
           alt="">
         <h2>Chuột</h2>
       </div>
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.f_nEhgdFa6ZcLiTWtRHrrAHaFX&pid=Api&rs=1&c=1&qlt=95&w=171&h=124"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.f_nEhgdFa6ZcLiTWtRHrrAHaFX&pid=Api&rs=1&c=1&qlt=95&w=171&h=124"
           alt="">
         <h2>camera hành trình</h2>
       </div>
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.wCHUGzLLDE-jYHC2EnuziQHaEN&pid=Api&rs=1&c=1&qlt=95&w=145&h=82"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.wCHUGzLLDE-jYHC2EnuziQHaEN&pid=Api&rs=1&c=1&qlt=95&w=145&h=82"
           alt="">
         <h2>bàn phím</h2>
       </div>
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.hIFaZ5KpjOk8-kG5roEYxwHaHd&pid=Api&rs=1&c=1&qlt=95&w=113&h=114"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.hIFaZ5KpjOk8-kG5roEYxwHaHd&pid=Api&rs=1&c=1&qlt=95&w=113&h=114"
           alt="">
         <h2>máy lọc không khí</h2>
       </div>
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.BSKBbo4jx_AYRXkbLDuJMgHaHa&pid=Api&rs=1&c=1&qlt=95&w=115&h=115"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.BSKBbo4jx_AYRXkbLDuJMgHaHa&pid=Api&rs=1&c=1&qlt=95&w=115&h=115"
           alt="">
         <h2>robot hút bụi</h2>
       </div>
     </div>
     <div class="col-xl-2 col-md-2 col-sm-12">
       <div class="content3">
-        <img src="https://tse1.mm.bing.net/th?id=OIP.WnM6IHmX8EQfrDMws110NgHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.WnM6IHmX8EQfrDMws110NgHaHa&pid=Api&rs=1&c=1&qlt=95&w=121&h=121"
           alt="">
         <h2>ốp lưng
         </h2>
@@ -205,23 +217,29 @@
     <div class="col-xl-6 col-md-6 col-sm-12" style="text-align:center ;padding-top: 20px;">
       <Strong>
         <h3 style="color: #D54D55;
-      ">Tại sao nên sắm SmartTV tại Hoàng Hà? Chính sách vận chuyển rõ ràng. Ưu đãi bạt ngàn và…</h3>
+      ">Tại sao nên sắm SmartTV tại Hoàng Hà? Chính sách vận chuyển rõ ràng. Ưu đãi bạt ngàn và…
+        </h3>
       </Strong>
       <h5 style="margin-top: 10px ; margin-left: 20px;">
-        Nếu có một vật dụng trong nhà có thể kết nối mọi người, thì chắc chắn phải là chiếc TV. Đây là nơi cả nhà có thể
+        Nếu có một vật dụng trong nhà có thể kết nối mọi người, thì chắc chắn phải là chiếc TV. Đây
+        là nơi cả nhà có thể
         quây quần giải trí sau một ngày dài làm việc học tập & làm việc căng thẳng.
 
-        Và khi cần tìm một địa chỉ mua SmartTV chính hãng và uy tín nhất, chắc chắn Hoàng Hà Mobile sẽ là địa điểm hàng
-        đầu. Giá tốt, sản phẩm uy tín, và chính sách bán hàng rõ ràng chắc chắn sẽ làm hài lòng khách hàng khi tới mua
+        Và khi cần tìm một địa chỉ mua SmartTV chính hãng và uy tín nhất, chắc chắn Hoàng Hà Mobile
+        sẽ là địa điểm hàng
+        đầu. Giá tốt, sản phẩm uy tín, và chính sách bán hàng rõ ràng chắc chắn sẽ làm hài lòng
+        khách hàng khi tới mua
         sắm SmartTV tại hệ thống của Hoàng Hà Mobile!
 
         Cùng tìm hiểu chi tiết tại bài viết sau đây!
 
         1. Chính sách Vận chuyển cụ thể & rõ ràng
         a. Tại các tỉnh/thành có cửa hàng Hoàng Hà Mobile
-        Ưu đãi giảm 100.000Đ khi khách hàng mua tivi và tự vận chuyển (áp dụng với cửa hàng không phải luân chuyển hàng
+        Ưu đãi giảm 100.000Đ khi khách hàng mua tivi và tự vận chuyển (áp dụng với cửa hàng không
+        phải luân chuyển hàng
         từ tỉnh – tỉnh)
-        Trường hợp không nhận ưu đãi, Hoàng Hà Mobile sẽ miễn phí vận chuyển và công lắp đặt cho khách hàng
+        Trường hợp không nhận ưu đãi, Hoàng Hà Mobile sẽ miễn phí vận chuyển và công lắp đặt cho
+        khách hàng
       </h5>
       <button class="btn btn-primary">Xem chi tiết</button>
     </div>
@@ -231,11 +249,14 @@
     <div class="col-xl-6 col-md-6 col-sm-12" style="text-align:center ;padding-top: 20px;">
       <Strong>
         <h3 style="color: #D54D55;
-      ">Check-in liền tay, nhận ngay quà xịn tại 4 chi nhánh Ninh Bình, Thái Bình, Hà Nam, Nam Định</h3>
+      ">Check-in liền tay, nhận ngay quà xịn tại 4 chi nhánh Ninh Bình, Thái Bình, Hà Nam, Nam Định
+        </h3>
       </Strong>
       <h5 style="margin-top: 10px ; margin-left: 20px;">
-        Khách hàng khi tới mua sắm trực tiếp tại 4 chi nhánh (Ninh Bình, Thái Bình, Hà Nam, Nam Định) sau đó đăng bài
-        check-in trên Facebook cá nhân chế độ công khai, kèm hashtag hợp lệ #hoanghamobile sẽ nhận được:
+        Khách hàng khi tới mua sắm trực tiếp tại 4 chi nhánh (Ninh Bình, Thái Bình, Hà Nam, Nam
+        Định) sau đó đăng bài
+        check-in trên Facebook cá nhân chế độ công khai, kèm hashtag hợp lệ #hoanghamobile sẽ nhận
+        được:
 
         Tặng áo mưa hoặc mũ bảo hiểm với hóa đơn trên 3 triệu
         Tặng bình nước khi mua bất kỳ sản phẩm nào tại cửa hàng, khách hàng checkin tại cửa hàng với
