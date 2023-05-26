@@ -63,6 +63,34 @@
       "password": "123",
       "mobile": 123445656,
       "id": 2
+    },
+    {
+      "fullname": "aaaa",
+      "email": "vu tuan anh",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": 3
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 4
+    },
+    {
+      "fullname": "",
+      "email": "vu tuan anh",
+      "password": "123",
+      "confirmpassword": "",
+      "id": 5
+    },
+    {
+      "fullname": "",
+      "email": "vu tuan anh",
+      "password": "123",
+      "confirmpassword": "111",
+      "id": 6
     }
   ],
   "profile": {

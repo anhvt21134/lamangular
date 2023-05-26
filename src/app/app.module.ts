@@ -26,6 +26,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     TestComponent,
     AboutComponent,
     ContactComponent,
+
   ],
   imports: [
     BrowserModule,
