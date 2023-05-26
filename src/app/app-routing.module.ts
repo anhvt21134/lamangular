@@ -18,6 +18,7 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'product/:id', component: CategoryComponent },
       { path: 'login', component: LoginComponent },
