@@ -1,0 +1,69 @@
+<main>
+    <section class="well well__offset-3">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 30px;">Contacts</h2>
+            <div class="map">
+                <div class="bando">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.863981178819!2d105.74421217480814!3d21.038127780613546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1685069593486!5m2!1svi!2s"
+                        width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="row box-3">
+                <div class="grid_5">
+                    <h2>Contacts Form</h2>
+                    <form id="contact-form" class='contact-form'>
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
+                            <label class="name">
+                                Your Name:
+                                <input type="text" name="name" placeholder="" value=""
+                                    data-constraints="@Required @JustLetters" />
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*This is not a valid name.</span>
+                            </label>
+
+                            <label class="email">
+                                Your E-mail:
+                                <input type="text" name="email" placeholder="" value=""
+                                    data-constraints="@Required @Email" />
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*This is not a valid email.</span>
+                            </label>
+
+                            <label class="message">
+                                Message:
+                                <textarea name="message" placeholder=""
+                                    data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                <span class="empty-message">*This field is required.</span>
+                                <span class="error-message">*The message is too short.</span>
+                            </label>
+
+                            <div class="btn-wr">
+                                <a class="" href="#" data-type="reset">Clear</a>
+                                <a class="" href="#" data-type="submit">Send</a>
+                            </div>
+                        </fieldset>
+                        <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            &times;
+                                        </button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
