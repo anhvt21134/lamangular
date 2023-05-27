@@ -98,6 +98,20 @@
       "password": "123",
       "confirmpassword": "123",
       "id": 7
+    },
+    {
+      "fullname": "vu tuan anh",
+      "email": "vasasas",
+      "password": "asasas",
+      "confirmpassword": "asas",
+      "id": 8
+    },
+    {
+      "fullname": "aaaa",
+      "email": "vu tuan anh",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": 9
     }
   ],
   "profile": {
