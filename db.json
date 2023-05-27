@@ -112,6 +112,13 @@
       "password": "123",
       "confirmpassword": "123",
       "id": 9
+    },
+    {
+      "fullname": "nana",
+      "email": "vu tuan anh@",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": 10
     }
   ],
   "profile": {
