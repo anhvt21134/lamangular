@@ -91,6 +91,13 @@
       "password": "123",
       "confirmpassword": "111",
       "id": 6
+    },
+    {
+      "fullname": "aaaa",
+      "email": "vu tuan anh",
+      "password": "123",
+      "confirmpassword": "123",
+      "id": 7
     }
   ],
   "profile": {

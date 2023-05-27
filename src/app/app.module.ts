@@ -48,6 +48,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     AboutComponent,
     ContactComponent,
 
+
   ],
   imports: [
     BrowserModule,
