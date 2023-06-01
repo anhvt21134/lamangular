@@ -1,51 +1,35 @@
-import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
 
-import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms'
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
 
-
-export class RegisterComponent {
-
-  form: FormGroup;
-
-
-  constructor(private formBuilder: FormBuilder) {
-    this.form = this.formBuilder.group({
-      username: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-      confirmpassword: ['', [Validators.required]]
-    }, {
-      validator: this.passwordMatchValidator
-    });
+export class RegisterComponent implements OnInit {
+  public registerForm !: FormGroup;
+  constructor(private formbuilder: FormBuilder, private http: HttpClient, private router: Router) { }
+  ngOnInit(): void {
+    this.registerForm = this.formbuilder.group({
+      fullname: [''],
+      email: [''],
+      password: [''],
+      confirmpassword: ['']
+    })
   }
-  passwordMatchValidator(formGroup: FormGroup) {
-    const password = formGroup.get('password')?.value;
-    const confirmPassword = formGroup.get('confirmpassword')?.value;
+  register() {
+    this.http.post<any>("http://localhost:3000/registerusers", this.registerForm.value).subscribe(res => {
+      alert("đăng kí thành công");
+      this.registerForm.reset();
+      this.router.navigate(['login']);
+    }, err => {
+      alert("thất bại");
+    })
 
-    if (password !== confirmPassword) {
-      formGroup.get('confirmpassword')?.setErrors({ mismatch: true });
-    } else {
-      formGroup.get('confirmpassword')?.setErrors(null);
-    }
-  }
-  user = {
-    username: '',
-    email: '',
-    password: '',
-  };
-
-  onSubmit() {
-    console.log('Registration submitted:', this.user);
-    // Goi API
-    if (this.form.valid) {
-
-    }
 
   }
 }

@@ -22,6 +22,9 @@ import { LayoutAdminComponent } from './components/layouts/layout-admin/layout-a
 import { LayoutComponent } from './components/layouts/layout/layout.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TestComponent } from './pages/test/test.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+
 
 
 @NgModule({
@@ -42,6 +45,10 @@ import { TestComponent } from './pages/test/test.component';
     LayoutComponent,
     SidebarComponent,
     TestComponent,
+    AboutComponent,
+    ContactComponent,
+
+
   ],
   imports: [
     BrowserModule,
@@ -50,8 +57,12 @@ import { TestComponent } from './pages/test/test.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+
     ReactiveFormsModule,
     CommonModule
+
+
+
 
   ],
   providers: [],

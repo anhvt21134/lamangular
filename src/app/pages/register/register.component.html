@@ -1,58 +1,47 @@
-<h2>Register</h2>
-<form [formGroup]="form" class="form form-register" (ngSubmit)="onSubmit()">
-    <div class="md-3">
-        <label for="username" class="form-label">Your Username:</label>
-        <input type="username" id="username" name="username" [(ngModel)]="user.username" required
-            minlength="3" class="form-control" aria-describedby="emailHelp"
-            formControlName="username" />
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Register</h1>
+                </div>
 
-        <div class="error"
-            *ngIf="form.get('username')?.invalid && (form.get('username')?.dirty || form.get('username')?.touched)">
-            <div *ngIf="form.get('username')?.errors?.['required']">Username là trường bắt buộc
-            </div>
-            <div *ngIf="form.get('username')?.errors?.['minlength']">Username tối thiểu có 3 ký tự.
-            </div>
-            <div *ngIf="form.get('username')?.errors?.['maxlength']">Username tối đa có 20 ký tự
+                <form [formGroup]="registerForm" (ngSubmit)="register()">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1">Full name</label>
+                        <input formControlName="fullname" type="text" class="form-control"
+                            id="exampleInputPassword1" placeholder="full name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input formControlName="email" type="email" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your
+                            email with anyone
+                            else.</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input formControlName="password" type="password" class="form-control"
+                            id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputconfirmpassword">confirmpassword</label>
+                        <input formControlName="confirmpassword" type="password"
+                            class="form-control" id="exampleInputconfirmpassword"
+                            placeholder="confirmpassword">
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+                <a routerLink="/login">bạn đã có tài khoản</a>
+
             </div>
         </div>
     </div>
-    <div class="md-3">
-        <label for="email" class="" form-label>Email:</label>
-        <input type="email" id="email" name="email" [(ngModel)]="user.email" required
-            class="form-control" aria-describedby="emailHelp" formControlName="email" />
-        <div class="error"
-            *ngIf="form.get('email')?.invalid && (form.get('email')?.dirty || form.get('email')?.touched)">
-            <div *ngIf="form.get('email')?.errors?.['required']">Email là trường bắt buộc</div>
-            <div *ngIf="form.get('email')?.errors?.['email']">Email không đúng định dạng</div>
-        </div>
-    </div>
-    <div class="md-3">
-        <label for="password" class="" form-label>Password:</label>
-        <input type="password" id="password" name="password" [(ngModel)]="user.password" required
-            class="form-control" formControlName="password" />
-
-        <div class="error "
-            *ngIf="form.get('password')?.invalid && (form.get('password')?.dirty || form.get('password')?.touched)">
-            <div *ngIf="form.get('password')?.errors?.['required']">Password là trường bắt buộc
-            </div>
-            <div *ngIf="form.get('password')?.errors?.['minlength']">Password tối thiểu có 6 ký tự.
-            </div>
-        </div>
-    </div>
-
-    <div class="md-3">
-        <label for="confirmpassword" class="" form-label>Confirm Password:</label>
-        <input type="confirmpassword" id="confirmpassword" name="confirmpassword" required
-            class="form-control" formControlName="confirmpassword" />
-
-        <div class="error "
-            *ngIf="form.get('confirmpassword')?.invalid && (form.get('confirmpassword')?.dirty || form.get('confirmpassword')?.touched)">
-            <div *ngIf="form.get('confirmpassword')?.errors?.['required']">Confirmpassword là trường
-                bắt buộc
-            </div>
-            <div *ngIf="form.controls['confirmpassword'].hasError('mismatch')">Passwords không khớp
-            </div>
-        </div>
-    </div>
-    <button class="btn btn-primary register" type="submit">Register</button>
-</form>
+</div>
