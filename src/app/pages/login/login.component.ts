@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 })
 
 export class LoginComponent implements OnInit {
+  submitted: boolean = false;
   public loginForm!: FormGroup
   constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) { }
   ngOnInit(): void {
