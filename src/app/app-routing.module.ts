@@ -11,6 +11,7 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { RegisterComponent } from './pages/register/register.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { DetailProductComponent } from './pages/detail-product/detail-product.component';
 const routes: Routes = [
   // ứng dụng phía khách
   {
@@ -20,7 +21,7 @@ const routes: Routes = [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'product/:id', component: CategoryComponent },
+      { path: 'product/:id', component: DetailProductComponent },
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
       { path: 'contact', component: ContactComponent },
