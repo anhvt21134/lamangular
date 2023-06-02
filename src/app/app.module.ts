@@ -24,6 +24,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TestComponent } from './pages/test/test.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { DetailProductComponent } from './pages/detail-product/detail-product.component';
+
 
 
 
@@ -47,6 +49,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     TestComponent,
     AboutComponent,
     ContactComponent,
+    DetailProductComponent,
+
 
 
   ],
