@@ -3,7 +3,7 @@ export interface IProduct {
   name: string;
   price: number;
   price_sale: number;
-  description: string;
+  description?: string;
   quanlity: number;
-  image: string;
+  image?: string;
 }

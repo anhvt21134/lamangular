@@ -25,6 +25,9 @@ import { TestComponent } from './pages/test/test.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DetailProductComponent } from './pages/detail-product/detail-product.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { ProductCreateComponent } from './components/product-create/product-create.component';
+
 
 
 
@@ -50,6 +53,9 @@ import { DetailProductComponent } from './pages/detail-product/detail-product.co
     AboutComponent,
     ContactComponent,
     DetailProductComponent,
+    ProductListComponent,
+    ProductCreateComponent,
+
 
 
 

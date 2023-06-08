@@ -12,6 +12,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DetailProductComponent } from './pages/detail-product/detail-product.component';
+import { ProductCreateComponent } from './components/product-create/product-create.component';
 const routes: Routes = [
   // ứng dụng phía khách
   {
@@ -38,6 +39,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', component: DashboardComponent },
       { path: 'products', component: ProductsComponent },
+      { path: 'products/create', component: ProductCreateComponent }
     ],
   },
 
