@@ -13,7 +13,7 @@ import { ProductService } from 'src/app/services/product.service';
 export class HomeComponent implements OnInit {
   products: any[] | undefined;
   constructor(private productService: ProductService, private router: Router) { }
-
+  searchtext:any
   ngOnInit() {
     this.getProducts();
   }
@@ -31,6 +31,6 @@ export class HomeComponent implements OnInit {
 
   viewDetail(productId: number) {
     // Điều hướng đến trang chi tiết sản phẩm với productId
-    this.router.navigate(['/product', productId]);
+    this.router.navigate(['/deltail', productId]);
   }
 }

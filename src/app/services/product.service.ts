@@ -25,4 +25,7 @@ export class ProductService {
     updateProduct(product: IProduct): Observable<IProduct> {
         return this.http.patch<IProduct>(`http://localhost:3000/products/${product.id}`, product);
     }
+    listProduct(): Observable<IProduct[]> {
+        return this.http.get<IProduct[]>(`http://localhost:3000/products`);
+    }
 }
