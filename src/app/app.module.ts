@@ -27,6 +27,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { DetailProductComponent } from './pages/detail-product/detail-product.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductCreateComponent } from './components/product-create/product-create.component';
+import { ProductUpdateComponent } from './components/product-update/product-update.component';
 
 
 
@@ -55,6 +56,7 @@ import { ProductCreateComponent } from './components/product-create/product-crea
     DetailProductComponent,
     ProductListComponent,
     ProductCreateComponent,
+    ProductUpdateComponent,
 
 
 

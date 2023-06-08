@@ -26,8 +26,8 @@
             </td>
             <td class="">
                 <button class="btn btn-primary ">View Detail</button>
-                <button class="btn btn-danger ">Xóa</button>
-                <button class="btn btn-primary ">Update</button>
+                <button class="btn btn-danger " (click)="removeItem(product.id)">Xóa</button>
+                <button class="btn btn-primary " (click)="viewUpdate(product.id)">Update</button>
             </td>
         </tr>
     </tbody>
