@@ -69,67 +69,50 @@
   ],
   "registerusers": [
     {
-      "fullname": "",
-      "email": "vu tuan anh",
-      "password": "123",
-      "mobile": "",
-      "id": 1
+      "fullname": "abc update",
+      "email": "abc@gmail.com",
+      "password": "123123",
+      "confirmPassword": "123123",
+      "id": 10,
+      "address": "",
+      "phonenumber": "",
+      "role": "admin"
     },
     {
-      "fullname": "aaaa",
-      "email": "vu tuan anh",
-      "password": "123",
-      "mobile": 123445656,
-      "id": 2
+      "fullname": "hiepnc 1",
+      "email": "abc@gmail.com",
+      "password": "11111111",
+      "address": "",
+      "phonenumber": "",
+      "role": "admin",
+      "id": 13
     },
     {
-      "fullname": "aaaa",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "123",
-      "id": 3
+      "fullname": "Hiepnc update 1",
+      "email": "sfdf@gmail.com",
+      "password": "1111111",
+      "address": "111111",
+      "phonenumber": "11111111111",
+      "role": "ad",
+      "id": 14
     },
     {
-      "fullname": "",
-      "email": "",
-      "password": "",
-      "confirmpassword": "",
-      "id": 4
+      "fullname": "hiepqqqqq",
+      "email": "abc@gmail.com",
+      "password": "333333333",
+      "address": "sfdsdfds",
+      "phonenumber": "3222222223",
+      "role": "admin",
+      "id": 15
     },
     {
-      "fullname": "",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "",
-      "id": 5
-    },
-    {
-      "fullname": "",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "111",
-      "id": 6
-    },
-    {
-      "fullname": "aaaa",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "123",
-      "id": 7
-    },
-    {
-      "fullname": "vu tuan anh",
-      "email": "vasasas",
-      "password": "asasas",
-      "confirmpassword": "asas",
-      "id": 8
-    },
-    {
-      "fullname": "aaaa",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "123",
-      "id": 9
+      "fullname": "aaaaaaaaaaaaaa",
+      "email": "abc@gmail.com",
+      "password": "2222222222",
+      "address": "12344",
+      "phonenumber": "",
+      "role": "ad",
+      "id": 16
     },
     {
       "fullname": "abc",

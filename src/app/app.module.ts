@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+
 import { CommonModule } from '@angular/common';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -24,6 +26,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TestComponent } from './pages/test/test.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+
 import { DetailProductComponent } from './pages/detail-product/detail-product.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductCreateComponent } from './components/product-create/product-create.component';
@@ -33,9 +36,13 @@ import { ProductUpdateComponent } from './components/product-update/product-upda
 
 
 
+
 import { ProductComponent } from './pages/product/product.component';
 import { FilterPipe } from './filter.pipe';
 import { PproductListComponent } from './pages/pproduct-list/pproduct-list.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { UserCreateComponent } from './components/user-create/user-create.component';
+import { UserUpdateComponent } from './components/user-update/user-update.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
@@ -62,6 +69,14 @@ import {NgxPaginationModule} from 'ngx-pagination';
     ProductCreateComponent,
     ProductUpdateComponent,
 
+
+
+    ProductComponent,
+    FilterPipe,
+    PproductListComponent,
+    UserListComponent,
+    UserCreateComponent,
+    UserUpdateComponent,
 
     ProductComponent,
     FilterPipe,

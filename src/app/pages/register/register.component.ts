@@ -17,7 +17,10 @@ export class RegisterComponent {
     fullname: ['', [Validators.required, Validators.minLength(3)]],
     email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required, Validators.minLength(6)]],
-    confirmPassword: ['', [Validators.required]]
+    confirmPassword: ['', [Validators.required]],
+    address: ['', [Validators.minLength(5)]],
+    phonenumber: ['', [Validators.minLength(10)]],
+
   }, { validators: this.checkPasswords });
 
 
