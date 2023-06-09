@@ -26,6 +26,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProductComponent } from './pages/product/product.component';
 import { FilterPipe } from './filter.pipe';
 import { PproductListComponent } from './pages/pproduct-list/pproduct-list.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +61,7 @@ import { PproductListComponent } from './pages/pproduct-list/pproduct-list.compo
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgxPaginationModule
    
   ],
   providers: [],

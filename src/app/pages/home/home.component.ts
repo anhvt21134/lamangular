@@ -13,7 +13,10 @@ import { ProductService } from 'src/app/services/product.service';
 export class HomeComponent implements OnInit {
   products: any[] | undefined;
   constructor(private productService: ProductService, private router: Router) { }
-  searchtext:any
+  searchtext:any;
+  p: number = 1;
+  itemsPerPage = 3;
+  totalProduct:any;
   ngOnInit() {
     this.getProducts();
   }
@@ -22,6 +25,7 @@ export class HomeComponent implements OnInit {
     this.productService.getProducts().subscribe(
       (response) => {
         this.products = response;
+        this.totalProduct = response.length;
       },
       (error) => {
         console.log(error);
