@@ -76,7 +76,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-
+NgxPaginationModule,
     ReactiveFormsModule,
     CommonModule
 
