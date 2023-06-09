@@ -76,6 +76,35 @@
                         </div>
                     </div>
                     <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" formControlName="address" class="form-control"
+                            placeholder="Address">
+                        <div class="errors">
+
+                            <div *ngIf="
+                                registerForm.get('address')?.hasError('minlength') && submitted
+                            ">
+                                Địa chỉ phải có trên 6 ký tự
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phonenumber">Phone number</label>
+                        <input type="text" formControlName="phonenumber" class="form-control"
+                            placeholder="Phone number">
+                        <div class="errors">
+
+                            <div *ngIf="
+                                registerForm.get('phonenumber')?.hasError('minlength') && submitted
+                            ">
+                                Điện thoại có tối thiểu 10 số
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label px-2" for="exampleCheck1">Check me
                             out</label>
