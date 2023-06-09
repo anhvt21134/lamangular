@@ -1,0 +1,82 @@
+<div class="container">
+    <form id="form" [formGroup]="productForm" (ngSubmit)="onHandleSubmit()">
+        <label for="name">Tên sản phẩm:</label>
+        <input type="text" formControlName="name" />
+        <div class="errors">
+            <div *ngIf="productForm.get('name')?.hasError('required') && submitted">
+                Name là trường bắt buộc
+            </div>
+            <div *ngIf="
+            productForm.get('name')?.hasError('minlength') && submitted
+        ">
+                Name phải có trên 6 ký tự
+            </div>
+            <div *ngIf="
+            productForm.get('name')?.hasError('maxLength') && submitted
+        ">
+                Name phải có trên 6 ký tự
+            </div>
+        </div>
+        <label for="price">Giá sản phẩm:</label>
+        <input type="number" formControlName="price" />
+        <div class="errors">
+            <div *ngIf="productForm.get('price')?.hasError('required') && submitted">
+                Price là trường bắt buộc
+            </div>
+
+            <div *ngIf="
+            productForm.get('price')?.hasError('min') && submitted
+        ">
+                Price phải lớn hơn 0
+            </div>
+        </div>
+        <label for="price_sale">Giá sản phẩm sale:</label>
+        <input type="number" formControlName="price_sale" />
+        <div class="errors">
+            <div *ngIf="productForm.get('price_sale')?.hasError('required') && submitted">
+                Price_sale là trường bắt buộc
+            </div>
+
+            <div *ngIf="
+            productForm.get('price_sale')?.hasError('min') && submitted
+        ">
+                Price_sale phải lớn hơn 0
+            </div>
+        </div>
+        <label for="description">Mô tả sản phẩm: </label>
+        <input type="text" formControlName="description" />
+        <div class="errors">
+            <div *ngIf="productForm.get('description')?.hasError('required') && submitted">
+                Description là trường bắt buộc
+            </div>
+            <div *ngIf="
+            productForm.get('description')?.hasError('minlength') && submitted
+        ">
+                Description phải có trên 6 ký tự
+            </div>
+            <div *ngIf="
+            productForm.get('description')?.hasError('maxLength') && submitted
+        ">
+                Description phải có trên 6 ký tự
+            </div>
+        </div>
+        <label for="quanlity">Số lượng: </label>
+        <input type="text" formControlName="quanlity" />
+        <div class="errors">
+            <div *ngIf="productForm.get('quanlity')?.hasError('required') && submitted">
+                Số lượng là trường bắt buộc
+            </div>
+
+            <div *ngIf="
+            productForm.get('quanlity')?.hasError('min') && submitted
+        ">
+                Số lượng phải lớn hơn 0
+            </div>
+        </div>
+        <label for="image">Ảnh sản phẩm: </label>
+        <input type="text" formControlName="image" />
+
+        <button type="submit">Thêm</button>
+        {{ productForm.value | json }}
+    </form>
+</div>
