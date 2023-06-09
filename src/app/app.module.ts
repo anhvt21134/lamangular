@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -24,9 +23,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TestComponent } from './pages/test/test.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
-
-
-
+import { ProductComponent } from './pages/product/product.component';
+import { FilterPipe } from './filter.pipe';
+import { PproductListComponent } from './pages/pproduct-list/pproduct-list.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +47,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     TestComponent,
     AboutComponent,
     ContactComponent,
+    ProductComponent,
+    FilterPipe,
+    PproductListComponent,
 
 
   ],
@@ -57,7 +60,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent],
