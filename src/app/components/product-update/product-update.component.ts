@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IProduct } from 'src/app/common/product';
 import { FormBuilder, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
 @Component({
   selector: 'app-product-update',
@@ -28,6 +28,7 @@ export class ProductUpdateComponent {
   constructor(
     private productService: ProductService,
     private route: ActivatedRoute,
+    private router: Router,
     private formBuilder: FormBuilder) {
     this.route.paramMap.subscribe(param => {
       const id = Number(param.get('id'));
@@ -54,13 +55,15 @@ export class ProductUpdateComponent {
         id: this.product.id,
         name: this.productForm.value.name || '',
         price: this.productForm.value.price || 0,
-        price_sale: this.productForm.value.price || 0,
+        price_sale: this.productForm.value.price_sale || 0,
         description: this.productForm.value.description || '',
         quanlity: this.productForm.value.quanlity || 0,
         image: this.productForm.value.image || ''
       }
       this.productService.updateProduct(newProduct).subscribe(product => {
         console.log('Thành công', product)
+        alert("Cập nhật thành công")
+        this.router.navigate(['admin/products'])
       })
     }
   }

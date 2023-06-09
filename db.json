@@ -58,6 +58,24 @@
       "image": "https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/03/13/c55-1-den.png",
       "quanlity": 1000,
       "description": "Realme là một trong những nhà sản xuất điện thoại thông minh nổi tiếng tại thị trường châu Á nói riêng và một số khu vực khác trên thế giới. Những chiếc điện thoại Realme nổi bật với thiết kế trẻ trung và khả năng chụp ảnh vượt trội. Mới đây, nhà sản xuất đã giới thiệu mẫu Realme C55 8GB/256GB chính hãng. Cùng tìm hiểu những ưu điểm"
+    },
+    {
+      "name": "abcabc update 1 2",
+      "price": 123,
+      "price_sale": 12,
+      "description": "333111",
+      "quanlity": "2",
+      "image": "https://thiepmung.com/uploads/effect-data/thiepmung.com/n2sl92rhn/demo-15cdfdb64e94e2_e30855d19366cae6eab3ab8d2748a123.jpg",
+      "id": 7
+    },
+    {
+      "name": "aaaaaaaaa update 1",
+      "price": 2,
+      "price_sale": 2,
+      "description": "aaaaaaaaaa",
+      "quanlity": "02",
+      "image": "s",
+      "id": 8
     }
   ],
   "registerusers": [

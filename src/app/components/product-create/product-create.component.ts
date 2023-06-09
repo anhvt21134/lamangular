@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators, FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { IProduct } from 'src/app/common/product';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -28,7 +29,8 @@ export class ProductCreateComponent {
 
   constructor(
     private formBuilder: FormBuilder,
-    private productService: ProductService
+    private productService: ProductService,
+    private router: Router
   ) { }
   onHandleSubmit() {
     // const product: IProduct = {
@@ -52,6 +54,7 @@ export class ProductCreateComponent {
       }
       this.productService.addProduct(product).subscribe(product => {
         console.log('Thành công', product)
+        this.router.navigate(['admin/products'])
       })
     }
   }
