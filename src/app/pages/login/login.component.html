@@ -16,19 +16,40 @@
                             <small id="emailHelp" class="form-text text-muted">We'll never share
                                 your email with anyone
                                 else.</small>
+                            <div class="errors">
+                                <div
+                                    *ngIf="loginForm.get('email')?.hasError('required') && submitted">
+                                    Email là trường bắt buộc
+                                </div>
+                                <div *ngIf="loginForm.get('email')?.hasError('email') && submitted">
+                                    Email không đúng định dạng
+                                </div>
+                            </div>
                         </div>
                         <div class="mb3">
                             <label for="exampleInputPassword1">Password</label>
                             <input formControlName="password" type="password" class="form-control"
                                 id="exampleInputPassword1" placeholder="Password">
+                            <div class="errors">
+                                <div *ngIf="
+                                    loginForm.get('password')?.hasError('required') && submitted
+                                            ">
+                                    Mật khẩu là bắt buộc
+                                </div>
+                                <div *ngIf="
+                                    loginForm.get('password')?.hasError('minlength') && submitted
+                                ">
+                                    Mật khẩu phải trên 6 ký tự
+                                </div>
+                            </div>
                         </div>
-                        <div class="mb3">
+                        <div class="mb3 check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Login</button>
                     </form>
-                    <a routerLink="/register">bạn chưa có tài khoản</a>
+                    <a routerLink="/register">Bạn chưa có tài khoản</a>
                 </form>
             </div>
         </div>
