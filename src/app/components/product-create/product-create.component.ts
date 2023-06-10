@@ -53,7 +53,8 @@ export class ProductCreateComponent {
         image: this.productForm.value.image || ''
       }
       this.productService.addProduct(product).subscribe(product => {
-        console.log('Thành công', product)
+        console.log('Thành công', product),
+        alert("thêm thành công")
         this.router.navigate(['admin/products'])
       })
     }
