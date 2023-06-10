@@ -19,7 +19,10 @@ export class LoginComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
     })
+
   }
+
+
   login() {
     this.submitted = true;
     if (this.loginForm.valid) {
@@ -39,7 +42,21 @@ export class LoginComponent implements OnInit {
         alert("đã sảy ra sự cố!!!")
       })
     }
-
-
   }
+
+
+  loadDbJson() {
+    return this.http.get("http://localhost:3000/registerusers");
+  }
+  handleLoginSuccess() {
+    this.loadDbJson().subscribe((data: any) => {
+      if (data && data.role === 'admin') {
+        this.router.navigate(['/admin']);
+      } else {
+        // Chuyển hướng đến trang khác nếu không phải admin
+        this.router.navigate(['/other-page']);
+      }
+    });
+  }
+
 }

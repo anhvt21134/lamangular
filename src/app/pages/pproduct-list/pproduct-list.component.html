@@ -145,7 +145,7 @@
 
     <h1><strong>Danh Sách Sản Phẩm</strong></h1>
     <!--Search box-->
-    <div class="form-control me-2">
+    <div class="form-control me-2 w-500">
         <input type="search" [(ngModel)]="searchtext" id="form1" class="form-control" placeholder="Search"
             aria-label="Search">
     </div>
@@ -197,7 +197,7 @@
                 <div id="cards_landscape_wrap-2">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 " *ngFor="let product of products">
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 " *ngFor="let product of products|filter:searchtext | paginate: { itemsPerPage: itemsPerPage, currentPage: p }">
                                 <a (click)="viewDetail(product.id)">
                                     <div class="card-flyer">
                                         <div class="text-box">
@@ -216,8 +216,10 @@
                                     </div>
                                 </a>
                             </div>
+                            
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
