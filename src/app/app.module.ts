@@ -43,6 +43,8 @@ import { PproductListComponent } from './pages/pproduct-list/pproduct-list.compo
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserCreateComponent } from './components/user-create/user-create.component';
 import { UserUpdateComponent } from './components/user-update/user-update.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+
 import {NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
@@ -77,6 +79,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
     UserListComponent,
     UserCreateComponent,
     UserUpdateComponent,
+    ProductDetailComponent,
 
     ProductComponent,
     FilterPipe,

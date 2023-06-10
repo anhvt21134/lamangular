@@ -81,6 +81,24 @@
       "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2022/10/24/image-removebg-preview-6.png",
       "quanlity": 1000,
       "description": "Realme là một trong những nhà sản xuất điện thoại thông minh nổi tiếng tại thị trường châu Á nói riêng và một số khu vực khác trên thế giới. Những chiếc điện thoại Realme nổi bật với thiết kế trẻ trung và khả năng chụp ảnh vượt trội. Mới đây, nhà sản xuất đã giới thiệu mẫu Realme C55 8GB/256GB chính hãng. Cùng tìm hiểu những ưu điểm"
+    },
+    {
+      "name": "Điện thoại di động OPPO Reno7 4G - Chính Hãngg",
+      "price": 1000000,
+      "price_sale": 1000000,
+      "description": "OPPO nhiều năm gần đây đã trở thành một trong những thương hiệu điện thoại được ưa chuộng tại Việt Nam. Cùng Hoàng Hà Mobile điểm mặt qua dòng điện thoại di động OPPO Reno7 4G đang được rất nhiều tín đồ yêu công nghệ trên thị trường Việt Nam săn đón nhé!",
+      "quanlity": "100",
+      "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2022/04/18/image-removebg-preview-8.png",
+      "id": 10
+    },
+    {
+      "name": "Điện thoại di động Xiaomi 12T - Chính hãng",
+      "price": 8000000,
+      "price_sale": 8000000,
+      "description": "Xiaomi 12T là chiếc điện thoại hướng tới phân khúc cận cao cấp với nhiều thông số cực ấn tượng. Bên cạnh hiệu năng khủng, sản phẩm còn tập trung vào hệ thống camera tiên tiến để người dùng nâng tầm cảm hứng sáng tạo.",
+      "quanlity": "50",
+      "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2022/10/05/image-removebg-preview-97.png",
+      "id": 11
     }
   ],
   "registerusers": [
