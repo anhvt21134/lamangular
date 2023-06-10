@@ -55,9 +55,12 @@
                                 <span class="review-no">999 reviews</span>
                             </div>
                             <p class="product-description">Màn hình 10.1 inch cảm ứng đa điểm</p>
-                            <small class="text-muted">Giá cũ:
-                                <s><span>{{product.price}} vnđ</span></s></small>
-                            <h4 class="price">Giá hiện tại: <span>{{product.price}} vnđ</span>
+                            <small class="text-muted ">Giá cũ:
+                                <s><span>{{product.price |
+                                        number:'1.0-0':'en-US'}} vnđ</span></s></small>
+                            <h4 class="price">Giá hiện tại: <span
+                                    class="price_sale">{{product.price_sale
+                                    | number:'1.0-0':'en-US'}} vnđ</span>
                             </h4>
                             <p class="vote"><strong>100%</strong> hàng <strong>Chất lượng</strong>,
                                 đảm bảo
@@ -83,7 +86,8 @@
                                     name="soluong">
                             </div>
                             <div class="action">
-                                <a class="add-to-cart btn btn-default m-3" id="btnThemVaoGioHang">Thêm
+                                <a class="add-to-cart btn btn-default m-3"
+                                    id="btnThemVaoGioHang">Thêm
                                     vào giỏ hàng</a>
                                 <a class="like btn btn-default" href="#"><span
                                         class="fa fa-heart"></span></a>

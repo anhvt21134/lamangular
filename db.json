@@ -4,7 +4,8 @@
       "id": 1,
       "catId:": 1,
       "name": "Iphone 13 VNA",
-      "price": 162900000,
+      "price_sale": 11123223,
+      "price": 12938432,
       "image": "https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2021/09/15/image-removebg-preview-11.png",
       "quanlity": 1000,
       "description": "Với những cải tiến không ngừng nghỉ cho những sản phẩm điện thoại thông minh của mình, Apple là hãng smartphone luôn nhận được sự tin tưởng từ người tiêu dùng Việt Nam. Dòng sản phẩm iPhone 13 được ra mắt gần đây với màu sắc mới và nâng cấp đáng kể về phần cứng của điện thoại đang nhận được rất nhiều sự quan tâm từ người hâm mộ.   "
@@ -13,7 +14,8 @@
       "id": 2,
       "catId:": 1,
       "name": "Điện thoại di động iPhone 14 Pro",
-      "price": 162900000,
+      "price_sale": 11123223,
+      "price": 12938432,
       "image": "https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2022/09/08/44444.png",
       "quanlity": 1000,
       "description": "Tháng 9 vừa qua, Apple đã tổ chức sự kiện Far Out ra mắt các sản phẩm mới. Sau nhiều tháng chờ đợi, cuối cùng người dùng cũng được chiêm ngưỡng iPhone 14 Series. Dòng sản phẩm năm nay không có nhiều thay đổi về thiết kế bên ngoài nhưng hiệu năng đã được cải thiện đáng kể. Đặc biệt, hai mẫu iPhone 14 Pro và iPhone 14 Pro Max"
@@ -22,116 +24,132 @@
       "id": 3,
       "catId:": 1,
       "name": "Realme C55 - 6GB/128GB",
-      "price": 162900000,
+      "price_sale": 11123223,
+      "price": 12938432,
       "image": "https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/03/13/c55-1-den.png",
       "quanlity": 1000,
       "description": "Realme là một trong những nhà sản xuất điện thoại thông minh nổi tiếng tại thị trường châu Á nói riêng và một số khu vực khác trên thế giới. Những chiếc điện thoại Realme nổi bật với thiết kế trẻ trung và khả năng chụp ảnh vượt trội. Mới đây, nhà sản xuất đã giới thiệu mẫu Realme C55 8GB/256GB chính hãng. Cùng tìm hiểu những ưu điểm"
     },
     {
       "id": 4,
-      "catId:": 2,
       "name": "Samsung Galaxy S20 FE 256GB - Chính hãng",
-      "price": 7290000,
-      "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2023/05/26/l19-0.png",
+      "price_sale": 11123223,
+      "price": 12938432,
+      "image": "https://cdn.hoanghamobile.com/i/productlist/ts/Uploads/2020/09/29/S20%20FE%20(1).png",
       "quanlity": 1000,
-      "description": "Với những cải tiến không ngừng nghỉ cho những sản phẩm điện thoại thông minh của mình, Apple là hãng smartphone luôn nhận được sự tin tưởng từ người tiêu dùng Việt Nam. Dòng sản phẩm iPhone 13 được ra mắt gần đây với màu sắc mới và nâng cấp đáng kể về phần cứng của điện thoại đang nhận được rất nhiều sự quan tâm từ người hâm mộ.   "
+      "description": "Với những cải tiến không ngừng nghỉ cho những sản phẩm điện thoại thông minh của mình, Apple là hãng smartphone luôn nhận được sự tin tưởng từ người tiêu dùng Việt Nam. Dòng sản phẩm  13 được ra mắt gần đây với màu sắc mới và nâng cấp đáng kể về phần cứng của điện thoại đang nhận được rất nhiều sự quan tâm từ người hâm mộ.   "
     },
     {
       "id": 5,
       "catId:": 1,
-      "name": "Điện thoại di động iPhone 14 Pro",
-      "price": 162900000,
-      "image": "https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2022/09/08/44444.png",
+      "name": "TECNO SPARK 10 Pro (8GB/128GB) - Chính hãng",
+      "price_sale": 11123223,
+      "price": 3540000,
+      "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2023/03/28/tecnospark10pro-7.png",
       "quanlity": 1000,
-      "description": "Tháng 9 vừa qua, Apple đã tổ chức sự kiện Far Out ra mắt các sản phẩm mới. Sau nhiều tháng chờ đợi, cuối cùng người dùng cũng được chiêm ngưỡng iPhone 14 Series. Dòng sản phẩm năm nay không có nhiều thay đổi về thiết kế bên ngoài nhưng hiệu năng đã được cải thiện đáng kể. Đặc biệt, hai mẫu iPhone 14 Pro và iPhone 14 Pro Max"
+      "description": "Tháng 9 vừa qua, Apple đã tổ chức sự kiện Far Out ra mắt các sản phẩm mới. Sau nhiều tháng chờ đợi, cuối cùng người dùng cũng được chiêm ngưỡng  14 Series. Dòng sản phẩm năm nay không có nhiều thay đổi về thiết kế bên ngoài nhưng hiệu năng đã được cải thiện đáng kể. Đặc biệt, hai mẫu  14 Pro và  14 Pro Max"
     },
     {
       "id": 6,
       "name": "Realme C55 - 6GB/128GB",
-      "price": 162900000,
+      "price_sale": 11123223,
+      "price": 12938432,
       "image": "https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/03/13/c55-1-den.png",
       "quanlity": 1000,
       "description": "Realme là một trong những nhà sản xuất điện thoại thông minh nổi tiếng tại thị trường châu Á nói riêng và một số khu vực khác trên thế giới. Những chiếc điện thoại Realme nổi bật với thiết kế trẻ trung và khả năng chụp ảnh vượt trội. Mới đây, nhà sản xuất đã giới thiệu mẫu Realme C55 8GB/256GB chính hãng. Cùng tìm hiểu những ưu điểm"
     },
     {
       "id": 7,
-      "name": "Realme C55 - 6GB/128GB",
+      "name": "AirPods Pro 2 - Chính hãng Apple Việt Nam",
       "price": 162900000,
-      "image": "https://cdn.hoanghamobile.com/i/productlist/dsp/Uploads/2023/03/13/c55-1-den.png",
+      "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2022/09/08/image-removebg-preview-13.png",
+      "quanlity": 1000,
+      "description": " là một trong những nhà sản xuất điện thoại thông minh nổi tiếng tại thị trường châu Á nói riêng và một số khu vực khác trên thế giới. Những chiếc điện thoại Realme nổi bật với thiết kế trẻ trung và khả năng chụp ảnh vượt trội. Mới đây, nhà sản xuất đã giới thiệu mẫu  C55 8GB/256GB chính hãng. Cùng tìm hiểu những ưu điểm"
+    },
+    {
+      "id": 8,
+      "name": "Redmi Note 12S (8GB/256GB) - Chính hãng",
+      "price": 6900000,
+      "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2022/08/16/image-removebg-preview-47.png",
+      "quanlity": 1000,
+      "description": "Realme là một trong những nhà sản xuất điện thoại thông minh nổi tiếng tại thị trường châu Á nói riêng và một số khu vực khác trên thế giới. Những chiếc điện thoại Realme nổi bật với thiết kế trẻ trung và khả năng chụp ảnh vượt trội. Mới đây, nhà sản xuất đã giới thiệu mẫu Realme C55 8GB/256GB chính hãng. Cùng tìm hiểu những ưu điểm"
+    },
+    {
+      "id": 9,
+      "name": "Vivo Y35 8GB/128GB - Chính hãng",
+      "price": 162900000,
+      "image": "https://cdn.hoanghamobile.com/i/preview/Uploads/2022/10/24/image-removebg-preview-6.png",
       "quanlity": 1000,
       "description": "Realme là một trong những nhà sản xuất điện thoại thông minh nổi tiếng tại thị trường châu Á nói riêng và một số khu vực khác trên thế giới. Những chiếc điện thoại Realme nổi bật với thiết kế trẻ trung và khả năng chụp ảnh vượt trội. Mới đây, nhà sản xuất đã giới thiệu mẫu Realme C55 8GB/256GB chính hãng. Cùng tìm hiểu những ưu điểm"
     }
   ],
   "registerusers": [
     {
-      "fullname": "",
-      "email": "vu tuan anh",
-      "password": "123",
-      "mobile": "",
-      "id": 1
+      "fullname": "abc update",
+      "email": "abc@gmail.com",
+      "password": "123123",
+      "confirmPassword": "123123",
+      "id": 10,
+      "address": "",
+      "phonenumber": "",
+      "role": "admin"
     },
     {
-      "fullname": "aaaa",
-      "email": "vu tuan anh",
-      "password": "123",
-      "mobile": 123445656,
-      "id": 2
+      "fullname": "hiepnc 1",
+      "email": "abc@gmail.com",
+      "password": "111111",
+      "address": "",
+      "phonenumber": "",
+      "role": "admin",
+      "id": 13
     },
     {
-      "fullname": "aaaa",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "123",
-      "id": 3
+      "fullname": "Hiepnc update 1",
+      "email": "sfdf@gmail.com",
+      "password": "1111111",
+      "address": "111111",
+      "phonenumber": "11111111111",
+      "role": "ad",
+      "id": 14
     },
     {
-      "fullname": "",
-      "email": "",
-      "password": "",
-      "confirmpassword": "",
-      "id": 4
+      "fullname": "hiepqqqqq",
+      "email": "abc@gmail.com",
+      "password": "333333333",
+      "address": "sfdsdfds",
+      "phonenumber": "3222222223",
+      "role": "admin",
+      "id": 15
     },
     {
-      "fullname": "",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "",
-      "id": 5
+      "fullname": "aaaaaaaaaaaaaa",
+      "email": "abc@gmail.com",
+      "password": "2222222222",
+      "address": "12344",
+      "phonenumber": "",
+      "role": "ad",
+      "id": 16
     },
     {
-      "fullname": "",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "111",
-      "id": 6
-    },
-    {
-      "fullname": "aaaa",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "123",
-      "id": 7
-    },
-    {
-      "fullname": "vu tuan anh",
-      "email": "vasasas",
-      "password": "asasas",
-      "confirmpassword": "asas",
-      "id": 8
-    },
-    {
-      "fullname": "aaaa",
-      "email": "vu tuan anh",
-      "password": "123",
-      "confirmpassword": "123",
-      "id": 9
-    },
-    {
-      "fullname": "nana",
-      "email": "vu tuan anh@",
-      "password": "123",
-      "confirmpassword": "123",
+      "fullname": "abc",
+      "email": "abc@gmail.com",
+      "password": "123123",
+      "confirmPassword": "123123",
       "id": 10
+    },
+    {
+      "fullname": "aaa",
+      "email": "abc2@gmail.com",
+      "password": "1234123",
+      "confirmPassword": "1234123",
+      "id": 11
+    },
+    {
+      "fullname": "lemanh",
+      "email": "manhzxc3@gmail.com",
+      "password": "123123",
+      "confirmPassword": "123123",
+      "id": 12
     }
   ],
   "profile": {

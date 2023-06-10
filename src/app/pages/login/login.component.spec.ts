@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 import { LoginComponent } from './login.component';
 
 describe('LoginComponent', () => {

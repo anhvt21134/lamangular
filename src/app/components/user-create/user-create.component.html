@@ -1,0 +1,86 @@
+<div class="container">
+
+    <form id="form" [formGroup]="userForm" (ngSubmit)="onHandleSubmit()">
+        <h1>Create User</h1>
+        <label for="fullname">User name *:</label>
+        <input class="box" type="text" formControlName="fullname" placeholder="User name ..." />
+        <div class="errors">
+            <div *ngIf="userForm.get('fullname')?.hasError('required') && submitted">
+                Full name là trường bắt buộc
+            </div>
+            <div *ngIf="
+            userForm.get('fullname')?.hasError('minlength') && submitted
+        ">
+                Full name phải có trên 6 ký tự
+            </div>
+            <div *ngIf="
+            userForm.get('fullname')?.hasError('maxLength') && submitted
+        ">
+                Full name phải có trên 25 ký tự
+            </div>
+        </div>
+
+        <label for="email">Email *:</label>
+        <input class="box" type="text" formControlName="email" placeholder="Email ...">
+        <div class="errors">
+            <div *ngIf="userForm.get('email')?.hasError('required') && submitted">
+                Email là trường bắt buộc
+            </div>
+            <div *ngIf="userForm.get('email')?.hasError('email') && submitted">
+                Email không đúng định dạng
+            </div>
+        </div>
+
+
+        <label for="password">Password *:</label>
+        <input class="box" type="password" formControlName="password" placeholder="Password ...">
+        <div class="errors">
+            <div *ngIf="
+            userForm.get('password')?.hasError('required') && submitted
+                    ">
+                Mật khẩu là bắt buộc
+            </div>
+            <div *ngIf="
+            userForm.get('password')?.hasError('minlength') && submitted
+        ">
+                Mật khẩu phải trên 6 ký tự
+            </div>
+        </div>
+
+        <label for="address">Địa chỉ:</label>
+        <input class="box" type="text" formControlName="address" placeholder="Address ..." />
+        <div class="errors">
+
+            <div *ngIf="
+            userForm.get('address')?.hasError('minlength') && submitted
+        ">
+                Địa chỉ phải có trên 6 ký tự
+            </div>
+
+        </div>
+
+        <label for="phonenumber">Số điện thoại:</label>
+        <input class="box" type="text" formControlName="phonenumber"
+            placeholder="Số điện thoại ..." />
+        <div class="errors">
+
+            <div *ngIf="
+            userForm.get('phonenumber')?.hasError('minlength') && submitted
+        ">
+                Điện thoại có tối thiểu 10 số
+            </div>
+
+        </div>
+
+        <label for="fullname">Role *:</label>
+        <input class="box" type="text" formControlName="role" placeholder="Role ..." />
+        <div class="errors">
+            <div *ngIf="userForm.get('role')?.hasError('required') && submitted">
+                Role là trường bắt buộc
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success">Thêm</button>
+        {{ userForm.value | json }}
+    </form>
+</div>

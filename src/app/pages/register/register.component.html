@@ -9,34 +9,109 @@
                 <form [formGroup]="registerForm" (ngSubmit)="register()">
                     <div class="mb-3">
                         <label for="exampleInputPassword1">Full name</label>
-                        <input formControlName="fullname" type="text" class="form-control" id="exampleInputPassword1"
-                            placeholder="full name">
+                        <input formControlName="fullname" type="text" class="form-control"
+                            id="exampleInputPassword1" placeholder="Full name">
+                        <div class="errors">
+                            <div
+                                *ngIf="registerForm.get('fullname')?.hasError('required') && submitted">
+                                Name là trường bắt buộc
+                            </div>
+                            <div *ngIf="
+                            registerForm.get('fullname')?.hasError('minlength') && submitted
+                        ">
+                                Name phải có trên 3 ký tự
+                            </div>
+                        </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        <input formControlName="email" type="email" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your
+                            email with anyone
                             else.</small>
+                        <div class="errors">
+                            <div
+                                *ngIf="registerForm.get('email')?.hasError('required') && submitted">
+                                Email là trường bắt buộc
+                            </div>
+                            <div *ngIf="registerForm.get('email')?.hasError('email') && submitted">
+                                Email không đúng định dạng
+                            </div>
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1">Password</label>
                         <input formControlName="password" type="password" class="form-control"
                             id="exampleInputPassword1" placeholder="Password">
+                        <div class="errors">
+                            <div *ngIf="
+                            registerForm.get('password')?.hasError('required') && submitted
+                                    ">
+                                Mật khẩu là bắt buộc
+                            </div>
+                            <div *ngIf="
+                            registerForm.get('password')?.hasError('minlength') && submitted
+                        ">
+                                Mật khẩu phải trên 6 ký tự
+                            </div>
+                        </div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputconfirmpassword">confirmpassword</label>
-                        <input formControlName="confirmpassword" type="password" class="form-control"
-                            id="exampleInputconfirmpassword" placeholder="confirmpassword">
+                        <label for="exampleInputconfirmpassword">Confirm password</label>
+                        <input formControlName="confirmPassword" type="password"
+                            class="form-control" id="exampleInputconfirmpassword"
+                            placeholder="confirmpassword">
+                        <div class="errors">
+                            <div *ngIf="
+                            registerForm.get('password')?.hasError('required') && submitted
+                                    ">
+                                Confirm password là bắt buộc
+                            </div>
+                            <div *ngIf="registerForm.hasError('notMatch') && submitted">
+                                Mật khẩu không khớp
+                            </div>
+                        </div>
                     </div>
+                    <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" formControlName="address" class="form-control"
+                            placeholder="Address">
+                        <div class="errors">
+
+                            <div *ngIf="
+                                registerForm.get('address')?.hasError('minlength') && submitted
+                            ">
+                                Địa chỉ phải có trên 6 ký tự
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phonenumber">Phone number</label>
+                        <input type="text" formControlName="phonenumber" class="form-control"
+                            placeholder="Phone number">
+                        <div class="errors">
+
+                            <div *ngIf="
+                                registerForm.get('phonenumber')?.hasError('minlength') && submitted
+                            ">
+                                Điện thoại có tối thiểu 10 số
+                            </div>
+
+                        </div>
+                    </div>
+
                     <div class="mb-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <label class="form-check-label px-2" for="exampleCheck1">Check me
+                            out</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Register</button>
                 </form>
-                <a routerLink="/login">bạn đã có tài khoản</a>
+                <a routerLink="/login">Bạn đã có tài khoản</a>
 
             </div>
         </div>

@@ -1,5 +1,9 @@
-export interface User {
-  name: string;
-  age: number;
-  address: string;
+export interface IUser {
+  id?: number,
+  fullname: string,
+  email: string,
+  password: string,
+  address?: string,
+  phonenumber?: string,
+  role: string
 }
